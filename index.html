@@ -62,6 +62,137 @@
     For each sample, the first row displays the input context image and the results from different methods. In the second row, we first present the predicted Region of Motion mask from our Stage One model. Additionally, we show the motion flow below each generated video in the second row. Note that the motion flow is not part of the model’s outputs; it is shown solely to facilitate easier comparison among methods. Finally, we provide the Input Target Action Prompt (e.g., “Pick up and crack egg.”) and the Enriched Action Description (e.g., “The person uses their left hand to pick up an egg from the egg box and cracks it into a bowl.”).
 </div>
 
+
+<!-- Section 2 -->
+<div class="section-title">Subtle Fingertip Motion</div>
+
+<div class="video-row">
+    <div class="model-name">Input Image</div>
+    <div class="model-name">LFDM</div>
+    <div class="model-name">AVDC</div>
+    <div class="model-name">PIA</div>
+    <div class="model-name">SORA</div>
+    <div class="model-name">Animate Anything</div>
+    <div class="model-name">Ours</div>
+</div>
+
+<!-- Group 2 -->
+<div class="video-row">
+    <img src="input/24.png" alt="Input Image" class="media">
+    <video controls autoplay muted loop class="media">
+        <source src="lfdm/24.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="avdc/24.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="pia/24.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="sora/24.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="animate_anything/24.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="ours/24.mp4" type="video/mp4">
+    </video>
+</div>
+<div class="image-row">
+    <img src="mask/24.png" alt="Mask Image" class="media">
+    <img src="flow_lfdm/24.png" alt="Flow LFDM" class="media">
+    <img src="flow_avdc/24.png" alt="Flow AVDC" class="media">
+    <img src="flow_pia/24.png" alt="Flow PIA" class="media">
+    <img src="flow_sora/24.png" alt="Flow PIA" class="media">
+    <img src="flow_animate_anything/24.png" alt="Flow Animate Anything" class="media">
+    <img src="flow_ours/24.png" alt="Flow Ours" class="media">
+</div>
+<div class="prompt">
+    <span class="short-prompt">"Peel garlic."</span>
+    <span class="arrow">→</span>
+    <span>"The person holds a garlic clove in the left hand and uses the right hand to peel the garlic."</span>
+</div>
+
+
+<div class="video-row">
+    <img src="input/42.png" alt="Input Image" class="media">
+    <video controls autoplay muted loop class="media">
+        <source src="lfdm/42.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="avdc/42.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="pia/42.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="sora/42.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="animate_anything/42.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="ours/42.mp4" type="video/mp4">
+    </video>
+</div>
+<div class="image-row">
+    <img src="mask/42.png" alt="Mask Image" class="media">
+    <img src="flow_lfdm/42.png" alt="Flow LFDM" class="media">
+    <img src="flow_avdc/42.png" alt="Flow AVDC" class="media">
+    <img src="flow_pia/42.png" alt="Flow PIA" class="media">
+    <img src="flow_sora/42.png" alt="Flow PIA" class="media">
+    <img src="flow_animate_anything/42.png" alt="Flow Animate Anything" class="media">
+    <img src="flow_ours/42.png" alt="Flow Ours" class="media">
+</div>
+<div class="prompt">
+    <span class="short-prompt">"Wash fruit."</span>
+    <span class="arrow">→</span>
+    <span>"The person holds the fruit in the left hand and continues to wash it under the running tap using the right hand."</span>
+</div>
+
+
+<div class="video-row">
+    <img src="input/816.png" alt="Input Image" class="media">
+    <video controls autoplay muted loop class="media">
+        <source src="lfdm/816.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="avdc/816.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="pia/816.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="sora/816.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="animate_anything/816.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="ours/816.mp4" type="video/mp4">
+    </video>
+</div>
+<div class="image-row">
+    <img src="mask/816.png" alt="Mask Image" class="media">
+    <img src="flow_lfdm/816.png" alt="Flow LFDM" class="media">
+    <img src="flow_avdc/816.png" alt="Flow AVDC" class="media">
+    <img src="flow_pia/816.png" alt="Flow PIA" class="media">
+    <img src="flow_sora/816.png" alt="Flow PIA" class="media">
+    <img src="flow_animate_anything/816.png" alt="Flow Animate Anything" class="media">
+    <img src="flow_ours/816.png" alt="Flow Ours" class="media">
+</div>
+<div class="prompt">
+    <span class="short-prompt">"Knit the fabric."</span>
+    <span class="arrow">→</span>
+    <span>"The person uses the crochet in the right hand to knit the fabric held in the left hand."</span>
+</div>
+
+
+<!-- More rows for Dexterous Finger Movements --><!-- More rows for Dexterous Finger Movements --><!-- More rows for Dexterous Finger Movements --><!-- More rows for Dexterous Finger Movements -->
+
+
+<div class="spacer"></div>
+
 <!-- Section 1 -->
 <div class="section-title">Large Hand Positional Motion</div>
 
@@ -75,28 +206,7 @@
     <div class="model-name">Ours</div>
 </div>
 
-<!-- Group 1 -->
-<div class="video-row">
-    <img src="input/56.png" alt="Input Image" class="media">
-    <video controls autoplay muted loop class="media">
-        <source src="lfdm/56.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="avdc/56.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="pia/56.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="sora/56.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="animate_anything/56.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="ours/56.mp4" type="video/mp4">
-    </video>
-</div>
+
 
 
 <div class="video-row">
@@ -283,7 +393,29 @@
     <span>"The person holds a cucumber with the left hand and uses a knife in the right hand to cut the cucumber."</span>
 </div>
 
-<div class="image-row"></div>
+<!-- Group 1 -->
+<div class="video-row">
+    <img src="input/56.png" alt="Input Image" class="media">
+    <video controls autoplay muted loop class="media">
+        <source src="lfdm/56.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="avdc/56.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="pia/56.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="sora/56.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="animate_anything/56.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted loop class="media">
+        <source src="ours/56.mp4" type="video/mp4">
+    </video>
+</div>
+<div class="image-row">
     <img src="mask/56.png" alt="Mask Image" class="media">
     <img src="flow_lfdm/56.png" alt="Flow LFDM" class="media">
     <img src="flow_avdc/56.png" alt="Flow AVDC" class="media">
@@ -304,135 +436,6 @@
 
 <div class="spacer"></div>
 
-<!-- Section 2 -->
-<div class="section-title">Subtle Dexterous Fingertip Motion</div>
-
-<div class="video-row">
-    <div class="model-name">Input Image</div>
-    <div class="model-name">LFDM</div>
-    <div class="model-name">AVDC</div>
-    <div class="model-name">PIA</div>
-    <div class="model-name">SORA</div>
-    <div class="model-name">Animate Anything</div>
-    <div class="model-name">Ours</div>
-</div>
-
-<!-- Group 2 -->
-<div class="video-row">
-    <img src="input/24.png" alt="Input Image" class="media">
-    <video controls autoplay muted loop class="media">
-        <source src="lfdm/24.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="avdc/24.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="pia/24.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="sora/24.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="animate_anything/24.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="ours/24.mp4" type="video/mp4">
-    </video>
-</div>
-<div class="image-row">
-    <img src="mask/24.png" alt="Mask Image" class="media">
-    <img src="flow_lfdm/24.png" alt="Flow LFDM" class="media">
-    <img src="flow_avdc/24.png" alt="Flow AVDC" class="media">
-    <img src="flow_pia/24.png" alt="Flow PIA" class="media">
-    <img src="flow_sora/24.png" alt="Flow PIA" class="media">
-    <img src="flow_animate_anything/24.png" alt="Flow Animate Anything" class="media">
-    <img src="flow_ours/24.png" alt="Flow Ours" class="media">
-</div>
-<div class="prompt">
-    <span class="short-prompt">"Peel garlic."</span>
-    <span class="arrow">→</span>
-    <span>"The person holds a garlic clove in the left hand and uses the right hand to peel the garlic."</span>
-</div>
-
-
-<div class="video-row">
-    <img src="input/42.png" alt="Input Image" class="media">
-    <video controls autoplay muted loop class="media">
-        <source src="lfdm/42.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="avdc/42.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="pia/42.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="sora/42.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="animate_anything/42.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="ours/42.mp4" type="video/mp4">
-    </video>
-</div>
-<div class="image-row">
-    <img src="mask/42.png" alt="Mask Image" class="media">
-    <img src="flow_lfdm/42.png" alt="Flow LFDM" class="media">
-    <img src="flow_avdc/42.png" alt="Flow AVDC" class="media">
-    <img src="flow_pia/42.png" alt="Flow PIA" class="media">
-    <img src="flow_sora/42.png" alt="Flow PIA" class="media">
-    <img src="flow_animate_anything/42.png" alt="Flow Animate Anything" class="media">
-    <img src="flow_ours/42.png" alt="Flow Ours" class="media">
-</div>
-<div class="prompt">
-    <span class="short-prompt">"Wash fruit."</span>
-    <span class="arrow">→</span>
-    <span>"The person holds the fruit in the left hand and continues to wash it under the running tap using the right hand."</span>
-</div>
-
-
-<div class="video-row">
-    <img src="input/816.png" alt="Input Image" class="media">
-    <video controls autoplay muted loop class="media">
-        <source src="lfdm/816.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="avdc/816.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="pia/816.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="sora/816.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="animate_anything/816.mp4" type="video/mp4">
-    </video>
-    <video controls autoplay muted loop class="media">
-        <source src="ours/816.mp4" type="video/mp4">
-    </video>
-</div>
-<div class="image-row">
-    <img src="mask/816.png" alt="Mask Image" class="media">
-    <img src="flow_lfdm/816.png" alt="Flow LFDM" class="media">
-    <img src="flow_avdc/816.png" alt="Flow AVDC" class="media">
-    <img src="flow_pia/816.png" alt="Flow PIA" class="media">
-    <img src="flow_sora/816.png" alt="Flow PIA" class="media">
-    <img src="flow_animate_anything/816.png" alt="Flow Animate Anything" class="media">
-    <img src="flow_ours/816.png" alt="Flow Ours" class="media">
-</div>
-<div class="prompt">
-    <span class="short-prompt">"Knit the fabric."</span>
-    <span class="arrow">→</span>
-    <span>"The person uses the crochet in the right hand to knit the fabric held in the left hand."</span>
-</div>
-
-
-<!-- More rows for Dexterous Finger Movements --><!-- More rows for Dexterous Finger Movements --><!-- More rows for Dexterous Finger Movements --><!-- More rows for Dexterous Finger Movements -->
-
-
-<div class="spacer"></div>
 
 <!-- Section 3 -->
 <div class="section-title">Object State Changing</div>
